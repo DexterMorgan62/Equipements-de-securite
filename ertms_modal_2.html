@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+    <meta charset="utf-8">
+    <title>Aide mémoire Info/Sécu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <meta name="author" content="Deschamps fédéric">
+
+    <!-- The styles -->
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- The fav icon -->
+    <link rel="shortcut icon" href="img/icone aide memoire.png">
+
+	<style>
+	/* Style Modal Bootstrap 4 */
+	.modal-content {max-height: calc(30vh - 250px);position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);width:140%;background-color:#393633;}
+	.modal-header{text-align: center;border:none;background-color:#393633;color:#fff;border-radius:0;}
+	.modal-footer{padding:0;border:none;}
+	.modal-footer .btn-primary {width:100%;border-radius:0;background-color:#393633;border-color:#333;}
+	.modal-footer .btn-primary:hover {background-color:#000000;}
+	.modal-body {padding:0;background-color:#393633;}
+	</style>
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+                <span>Info/Sécu</span></a>
+
+            <!-- theme selector starts -->
+            <div class="btn-group pull-right theme-container animated tada">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-tint"></i><span
+                        class="hidden-sm hidden-xs"> Change Theme / Skin</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="themes">
+                    <li><a data-value="classic" href="#"><i class="whitespace"></i> Classic</a></li>
+                    <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Cerulean</a></li>
+                    <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Cyborg</a></li>
+                    <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simplex</a></li>
+                    <li><a data-value="darkly" href="#"><i class="whitespace"></i> Darkly</a></li>
+                    <li><a data-value="lumen" href="#"><i class="whitespace"></i> Lumen</a></li>
+                    <li><a data-value="slate" href="#"><i class="whitespace"></i> Slate</a></li>
+                    <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Spacelab</a></li>
+                    <li><a data-value="united" href="#"><i class="whitespace"></i> United</a></li>
+                </ul>
+            </div>
+            <!-- theme selector ends -->
+
+            <ul class="collapse navbar-collapse nav navbar-nav top-menu">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-globe"></i>Visite Sites<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+					<li> <a href = "http://www.int.sncf.fr/wps/myportal/Intranet/accueil/ " target="_blank">Technicentre Le Landy</a></li>
+					<li> <a href = "http://www.tll.pn.sncf.fr/site-tll/index.php?page=applications_locales " target="_blank">Technicentre Le Landy applications locales (Traçabilités, réalité virtuelle VELARO)</a></li>
+					<li> <a href = "http://x23lixbibn4/www2/Navigation/systeme/tous" target="_blank">Ingénierie Hellemmes</a> </li>
+					<li> <a href = "http://wikipad.sncf.fr" target="_blank">WikiPAD</a></li>
+					<li> <a href = "https://digidoc.sncf.fr/parution/dossier"target="_blank">Digidoc</a> </li>
+					<li> <a href = "https://dsmat.mt.sncf.fr/"target="_blank">DSMat</a> </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+        
+        <!-- left menu starts -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header"><font color="red"><i class="glyphicon glyphicon-warning-sign"></i> Documents d'aide, ne seront pas tenus à jour</font></li>
+                        <li><a href="index.html"><i class="glyphicon glyphicon-home"></i><span> Accueil</span></a></li>
+						<li><a href="ertms.html"> ERTMS </a></li>
+						<li><a href="tvm.html"> TVM </a></li>
+						<li><a href="karm.html"> KARM </a></li>
+						<li><a href="kvb.html"> KVB </a></li>
+						<li><a href="vacma.html"> VACMA </a></li>
+						<li><a href="atess.html"> ATESS </a></li>
+						<li><a href="gsmr.html"> GSMR </a></li>
+						<li><a href="lzb.html"> LZB </a></li>
+						<li><a href="atb_tbl_atbl_ussb.html"> ATB TBL ATBL USSB </a></li>
+						<li><a href="sie.html"> SIE </a></li>
+						<li><a href="lorient.html"> LORIENT </a></li>
+						<li><a href="sanet.html"> SANET </a></li>
+						<li><a href="insta.html"> INSTABILITE BOGIE </a></li>
+						<li><a href="aws-tpws.html">AWS-TPWS</a></li>
+						<li><a href="ivng.html"> IVNG </a></li>
+						<li><a href="pbka.html"> PBKA </a></li>
+						<li><a href="velaro.html"> VELARO </a></li>
+						<li><a href="divers.html"> DIVERS </a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!-- content starts -->
+	<section class="row">
+		<div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="panel panel-info">
+			<div class="panel-heading">
+			<h2 class="panel-title">Documents de formation</h2>
+			</div>			
+			
+    			<a title="Module ERTMS" href="ERTMS/MODULE ERTMS VERSION C-coul.pdf#toolbar=0" class="list-group-item voir-pdf">Module ERTMS</a>
+				<a href="ERTMS/Formation_CONTINU_ERTMS 2013.pdf" class="list-group-item voir-pdf">Formation continu ERTMS 2013</a>
+				<a href="ERTMS/Formation_CONTINU_ERTMS 2014.pdf" class="list-group-item voir-pdf">Formation continu ERTMS 2014</a>
+				<a href="ERTMS/Fiches_pratique_A_+_annexes.pdf" class="list-group-item voir-pdf">Fiches pratique + annexes</a>
+                <a href="ERTMS/Exemples JRU ERTMSFC/" class="list-group-item voir-pdf">Exemples JRU</a>
+                				
+            
+			</div>
+		</div>	
+		<div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="panel panel-info">
+			<div class="panel-heading">
+			<h2 class="panel-title">Documents ansaldo</h2>
+			</div>			
+			<ul class="list-group">
+                <a href="ERTMS/NdF Thalys IndA chap01-10.pdf" class="list-group-item" target=_blank>Notice de fonctionnement chap01-10</a>
+                <a href="ERTMS/NdF Thalys IndA chap11-16.pdf" class="list-group-item" target=_blank>Notice de fonctionnement chap11-16</a>
+				<a href="ERTMS/formation maintenance ERTMS.pps" class="list-group-item" target=_blank>formation maintenance ERTMS (MID)</a>
+                <a href="ERTMS/formation maintenance ERTMS (principes).pps" class="list-group-item" target=_blank>formation maintenance ERTMS (principes)</a>
+            </ul>
+			</div>
+		</div>	
+		<div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="panel panel-success">
+			<div class="panel-heading">
+			<h2 class="panel-title">Equipements</h2>
+			</div> 			
+			<ul class="list-group">
+                <a href="ERTMS/Implantation des cartes dans le panier PSTD + ertms mode complet.pdf" class="list-group-item" target=_blank>Implantation des cartes dans le panier PSTD + ertms mode c… </a>
+                <a href="ERTMS/localisation_capteurs_ERTMS 1.jpg" class="list-group-item" target=_blank>localisation capteurs ERTMS PBKA</a>
+                <a href="ERTMS/Emplacements et symboles des capteurs wiegands.pdf" class="list-group-item" target=_blank>Emplacements et symboles des capteurs wiegands</a>
+				<a href="ERTMS/cable maintenance ERTMS.pdf" class="list-group-item" target=_blank>cable maintenance ERTMS</a>
+				<a href="ERTMS/MANUEL_UTILISATEUR_DU_PC_SAMV7 Ind C.pdf" class="list-group-item" target=_blank>manuel utilisateur PC SAM.pdf</a>
+				<a href="ERTMS/Info technique capteur moteur Wiegand NG modifié.pdf" class="list-group-item" target=_blank>Info technique capteur moteur Wiegand NG PBKA modifié</a>
+			</ul>
+            </div>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="panel panel-danger">
+			<div class="panel-heading">
+			<h2 class="panel-title">DSMat</h2>
+			</div> 		
+            <ul class="list-group">
+				<a href="https://dsmat.mt.sncf.fr/Viewer.aspx?DocumentId=7004" class="list-group-item" target=_blank>Livret de dépannage ERTMS</a>
+                <a href="https://dsmat.mt.sncf.fr/Viewer.aspx?DocumentId=4780" class="list-group-item" target=_blank>Gestion de configuration ERTMS</a>
+            </ul>
+			</div>
+		</div>
+				<div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="panel panel-default">
+			<div class="panel-heading">
+			<h2 class="panel-title">Divers</h2>
+			</div> 		
+            <ul class="list-group">
+                <a href="ERTMS/RTSO ERTMS 2010.pdf" class="list-group-item" target=_blank>RTSO ERTMS 2010</a>
+				<a href="ERTMS/RTSO ERTMS 2011.pdf" class="list-group-item" target=_blank>RTSO ERTMS 2011</a>
+				<a href="ERTMS/RTSO ERTMS 2012.pdf" class="list-group-item" target=_blank>RTSO ERTMS 2012</a>
+				<a href="ERTMS/RTSO ERTMS 2013.pdf" class="list-group-item" target=_blank>RTSO ERTMS 2013</a>
+				<a href="ERTMS/RTSO ERTMS 2014.pdf" class="list-group-item" target=_blank>RTSO ERTMS 2014</a>				
+                <a href="ERTMS/Lignes empruntées par les rames Thalys.pdf" class="list-group-item" target=_blank>Lignes empruntées par les rames </a>
+				<a href="ERTMS/Identite GSMR PBA PBKA.xls" class="list-group-item" target=_blank>Identite GSMR PBA PBKA </a>
+            </ul>
+			</div>
+		</div>
+    </section>
+</div>
+</div>
+    <hr>
+
+    <footer class="row">
+        <p class="col-md-9 col-sm-9 col-xs-12 copyright">&copy; <a href="mailto:frederic.deschamps@sncf.fr" target="_blank">Deschamps frédéric</a> 2015</p>
+
+        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Powered by: <a
+                href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
+    </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+    <script>
+/*
+* Le plug-in PDF
+*/
+(function(a){a.twModalPDF=function(b){defaults={title:"PDF dans un « modal »",message:"Impossible d’ouvrir le document PDF",closeButton:true,scrollable:false};var b=a.extend({},defaults,b);var c=(b.scrollable===true)?'style="max-height: 1020px;overflow-y: auto;"':"";html='<div class="modal fade" id="oModalPDF">';html+='<div class="modal-dialog modal-lg">';html+='<div class="modal-content">';html+='<div class="modal-header">';html+='<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';if(b.title.length>0){html+='<h4 class="modal-title">'+b.title+"</h4>"}html+="</div>";html+='<div class="modal-body" '+c+">";html+=b.message;html+="</div>";html+='<div class="modal-footer">';if(b.closeButton===true){html+='<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>'}html+="</div>";html+="</div>";html+="</div>";html+="</div>";a("body").prepend(html);a("#oModalPDF").modal().on("hidden.bs.modal",function(){a(this).remove()})}})(jQuery);
+
+
+  $(function(){    
+    $('.voir-pdf').on('click',function(){
+      var sUrl = $(this).attr('href');
+      var sTitre = $(this).attr('title');
+      var sIframe = '<object type="application/pdf" data="'+sUrl+'" width="100%" height="700">Aucun support</object>';
+      $.twModalPDF({
+        title:sTitre,
+        message: sIframe,
+        closeButton:true,
+        scrollable:false
+      });
+      return false;
+    });
+  })
+    </script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="js/charisma.js"></script>
+
+
+  </body>
+</html>
